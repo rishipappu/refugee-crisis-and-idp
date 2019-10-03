@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Radio Grotesk';
+    src: url('RadioGrotesk-Regular.eot');
+    src: local('Radio Grotesk Regular'), local('RadioGrotesk-Regular'),
+        url('RadioGrotesk-Regular.eot?#iefix') format('embedded-opentype'),
+        url('RadioGrotesk-Regular.woff2') format('woff2'),
+        url('RadioGrotesk-Regular.woff') format('woff'),
+        url('RadioGrotesk-Regular.ttf') format('truetype'),
+        url('RadioGrotesk-Regular.svg#RadioGrotesk-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

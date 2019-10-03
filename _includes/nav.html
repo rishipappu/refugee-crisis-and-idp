@@ -1,0 +1,52 @@
+<nav>
+    <ul class="linklist">
+        {% if include.content == "" %}
+        <li class="navlink" id="active"><a href="/">Home</a></li>
+        {% else %}
+        <li class="navlink"><a href="/">Home</a></li>
+        {% endif %}
+        {% if include.content == "timeline" %}
+        <li class="navlink" id="active"><a href="/timeline">Timeline</a></li>
+        {% else %}
+        <li class="navlink"><a href="/timeline">Timeline</a></li>
+        {% endif %}
+        {% if include.content == "stories" %}
+        <li class="navlink" id="active"><a href="/stories">Stories</a></li>
+        {% else %}
+        <li class="navlink"><a href="/stories">Stories</a></li>
+        {% endif %}
+        {% if include.content == "maps" %}
+        <li class="navlink" id="active"><a href="/maps">Maps</a></li>
+        {% else %}
+        <li class="navlink"><a href="/maps">Maps</a></li>
+        {% endif %}
+        {% if include.content == "stats" %}
+        <li class="navlink" id="active"><a href="statistics">Statistics</a></li>
+        {% else %}
+        <li class="navlink"><a href="statistics">Statistics</a></li>
+        {% endif %}
+        {% if include.content == "relief" %}
+        <li class="navlink" id="active"><a href="relief">Relief</a></li>
+        {% else %}
+        <li class="navlink"><a href="relief">Relief</a></li>
+        {% endif %}
+        {% if include.content == "beginning" %}
+        <li class="navlink" id="active"><a href="/new-beginnings">New Beginning</a></li>
+        {% else %}
+        <li class="navlink"><a href="/new-beginnings">New Beginning</a></li>
+        {% endif %}
+        {% if include.content == "help" %}
+        <li class="navlink" id="active"><a href="/how-can-you-help">How Can You Help?</a></li>
+        {% else %}
+        <li class="navlink"><a href="/how-can-you-help">How Can You Help?</a></li>
+        {% endif %}
+        {% if include.content == "culture" %}
+        <li class="navlink" id="active"><a href="/culture">Culture</a></li>
+        {% else %}
+        <li class="navlink"><a href="/culture">Culture</a></li>
+        {% endif %}
+    </ul>
+</nav>
+<main>
+    <div class="wrapper">
+        
