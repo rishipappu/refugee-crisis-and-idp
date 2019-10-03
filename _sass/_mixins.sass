@@ -1,49 +1,9 @@
-$break-small: 512px
-$break-medium: 800px
-$break-large: 1000px
-
-=respond-to($media)
-	@if $media == handhelds
-		@media only screen and (max-width: $break-small)
-			@content
-	@else if $media == medium-screens
-		@media only screen and (min-width: $break-small) and (max-width: $break-large)
-			@content
-	@else if $media == wide-screens
-		@media only screen and (min-width: $break-large)
-			@content
-
 =flexbox()
 	display: -webkit-box
 	display: -moz-box
 	display: -ms-flexbox
 	display: -webkit-flex
 	display: flex
-
-=keyframes($name)
-	@-webkit-keyframes #{$name}
-		@content
-	@-moz-keyframes #{$name}
-		@content
-	@-ms-keyframes #{$name}
-		@content
-	@keyframes #{$name}
-		@content
-
-=flex($values)
-	-webkit-box-flex: $values
-	-moz-box-flex: $values
-	-webkit-flex: $values
-	-ms-flex: $values
-	flex: $values
-
-=bgbasics($img: '', $color: transparent, $size: 100%)
-	background:
-	color: $color
-	image: url($img)
-	position: center
-	size: $size
-	repeat: no-repeat
 
 =vendor-transition($selection, $easing, $duration)
 	-webkit-transition: $selection $easing $duration
